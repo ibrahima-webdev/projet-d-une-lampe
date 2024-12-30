@@ -3,60 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>une lampe solaire portable</title>
 </head>
 <body>
     <header>
-        <div><span>solar</span>lite</div>
-        <nav>
-            <a href="#">acceuil</a>
-            <a href="#">À propos</a>
-            <a href="#">contacte</a>
-        </nav>
-
-    </header>
-    <section>
+        <div class="entete">
+            <div><span>solar</span>lite</div>
+            <nav id="lien">
+                <a href="#">acceuil</a>
+                <a href="#">À propos</a>
+                <a href="#">contact</a>
+            </nav>
+        </div>
         <section id="hero">
-            <img src="image/unnamed.jpg" alt=""> 
-            <div>
+            <div id="lampe">
                 <h1>la lampe solaire qu'il vous faut</h1>
-                <button>en savoir plus</button>
+                <a href="#">en savoir plus</a>
             </div>
+            <img class="image1" src="image/lampe.png" alt=""> 
         </section>
-        <section id="fonctionalite"></section>
-        <h1>pourquoi choisir solarlite ?</h1>
-        <p>SolarLite est une lampe solaire portable, idéale pour les voyages et les zones sans
-            électricité. Rechargeable au soleil, elle est compacte, durable et respectueuse de
-            l'environnement.</p>
-        <div id="pointcle">
-            <div>
-                <h1>rechargeable grace au soleil</h1>
-                <img src="image/unnamed 3.jpg" alt="">
+    </header>
+    <section id="fonctionalite">
+        <div id="solart">
+            <h1>pourquoi choisir solarlite ?</h1>
+            <p>SolarLite est une lampe solaire portable, idéale pour les voyages et les zones sans
+                électricité. Rechargeable au soleil, elle est compacte, durable et respectueuse de
+                l'environnement.</p>
+        </div>
+        <section id="cord">
+                <div class="pointcle">
+                <h1>Rechargeable grace au soleil</h1>
+                <img src="image/unnamed 2.jpg" alt="">
+                <p>
+                    utilise la lumiére du soleil pour se récharger, offrant une solution d'éclairage éco-responsable et sans consomation d'énergie.
+                    recharge solaire: alimentée par la lumiére naturelle du soleil.
+                    économie d'énergir: pas besoin de piles ni d'electricité.
+                    autonomie prolongée :s'éclaire toute la nuit aprés une journée de charge complète.
+                </p>
             </div>
-            <div><h1>compacte et facile a transporter</h1></div>
-            <img src="image/unnamed 4.jpg" alt="">
-            <div>
+            <div class="pointcle">
+                <h1>Compacte et facile a transporter</h1>
+                <img src="image/unnamed 2.jpg" alt="">
+                <p>
+                    utilise la lumiére du soleil pour se récharger, offrant une solution d'éclairage éco-responsable et sans consomation d'énergie.
+                    recharge solaire: alimentée par la lumiére naturelle du soleil.
+                    économie d'énergir: pas besoin de piles ni d'electricité.
+                    autonomie prolongée :s'éclaire toute la nuit aprés une journée de charge complète.
+                </p>
+            </div>
+            <div class="pointcle">
                 <h1>Durée de vie prolongée avec une batterie intégrée.</h1>
                 <img src="image/unnamed 2.jpg" alt="">
+                <p>
+                    utilise la lumiére du soleil pour se récharger, offrant une solution d'éclairage éco-responsable et sans consomation d'énergie.
+                    recharge solaire: alimentée par la lumiére naturelle du soleil.
+                    économie d'énergir: pas besoin de piles ni d'electricité.
+                    autonomie prolongée :s'éclaire toute la nuit aprés une journée de charge complète.
+                </p>
             </div>
+        </section>
+    </section>
+            <section id="contact">
+                <div class="forme-contenainer">
+                <h1>restez informé</h1>
+                <form action="#contact" method="POST" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email"id="email" Name="email">
+                        <span id="email-error"></span>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                <button type="submit">envoyer</button>
+        </form>
+    </div>
         </div>
     </section>
-    <section id="contact">
-        <h1>restez informé</h1>
-        <form action="">
-            <label for="">Nom</label>
-            <input type="text" name="" id="">
-            <label for="">E-mail</label>
-            <input type="text">
-            <button>Soumettre</button>
-        </form>
-
-    </section>
     <footer>
-
-
-
-
+        <div id="copy">
+            copyright 02024 tous droit reservés | ce modèle est conçu avec
+        </div>
     </footer>
+    <script src="scrip.js"></script>
 </body>
 </html>
